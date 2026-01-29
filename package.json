@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc -p tsconfig.build.json && vite build",
+    "build": "vite build && tsc -p tsconfig.build.json",
     "prepare": "npm run build",
     "prepublishOnly": "npm run build",
     "storybook": "storybook dev -p 6006",
