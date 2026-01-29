@@ -1,0 +1,25 @@
+.ui-button {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.65rem 1.3rem;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.ui-button--primary {
+  background: #1d4ed8;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(29, 78, 216, 0.25);
+}
+
+.ui-button--secondary {
+  background: #f8fafc;
+  border-color: #cbd5f5;
+  color: #1e293b;
+}
+
+.ui-button:hover {
+  transform: translateY(-1px);
+}
