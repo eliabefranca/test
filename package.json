@@ -1,5 +1,5 @@
 {
-  "name": "ui-lib",
+  "name": "@eliabe/test",
   "private": false,
   "version": "0.0.0",
   "type": "module",
@@ -17,9 +17,14 @@
   "files": [
     "dist"
   ],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -p tsconfig.build.json && vite build",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "preview": "vite preview",
